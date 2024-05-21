@@ -63,13 +63,13 @@ def play_game():
            else:
              user_cards.append(deal_card())
   
-  while comp_score != 0 and comp_score < 17:
-       computer_cards.append(deal_card())
-       comp_score=calculate_score(computer_cards)
-  print(f"your cards: {user_cards} and your final score {user_score}") 
-  print(f"computers cards : {computer_cards} and computers score : {comp_score}")
-     
-  print(compare(user_score,comp_score))  
+    while comp_score != 0 and comp_score < 17:
+           computer_cards.append(deal_card())
+           comp_score=calculate_score(computer_cards)
+    print(f"your cards: {user_cards} and your final score {user_score}") 
+    print(f"computers cards : {computer_cards} and computers score : {comp_score}")
+         
+    print(compare(user_score,comp_score))  
   
 a=input("Do you want to play a game of blackjack : y or n")
 
